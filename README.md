@@ -17,7 +17,7 @@ If you are using raspberry pi 4, the default chromium browser is fine. we just n
 
   https://launchpad.net/ubuntu/xenial/armhf/chromium-chromedriver/78.0.3904.108-0ubuntu0.16.04.1
 
-  If you use x86, find the related chromedriver.
+  If you use x86, find the related x86 chromedriver.
 
 2. git pull or download the python file to your desired folder
 
