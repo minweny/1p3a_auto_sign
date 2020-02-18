@@ -68,3 +68,7 @@ Add following setences
 ## Logging and screenshot
 You would find example.log and image.png under your current folder
 <br>![res](res.png)<br>
+Logging file
+<br>![logging](logging.png)<br>
+Screenshot
+<br>![screenshot](screenshot.png)<br>
