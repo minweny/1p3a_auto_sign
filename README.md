@@ -11,7 +11,7 @@
 * Auto sign for you to get one forum point every day
 * Send the account summary to your email, give you an idea of how many points you have in total:dog:
 * Save the screenshot of the forum news for you. (totally useless but I still did it)
-* Keep the logging information in example.log under the same folder. 
+* Keep the logging information in example.log under the same folder. If there is errors or exceptions, you can check it here
 
 ## Steps:
 1. Install Python3 (3.7+) to your Linux
