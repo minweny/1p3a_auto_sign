@@ -28,21 +28,23 @@ pip3 install fake_useragent
 
 3. In the same folder, create accounts.json
 Fill in your account and password for 1point3acres.com
+```
 {
 	"account": "",
 	"password": ""
 }
-
+```
 4. In the same folder, create emails.json
 Fill in your account and password for Gmail, and the email address that you want to receive the notification
+```
 {
 	"senderGmailAccount": "***@gmail.com",
 	"senderGmailPass": "",
 	"receiver": "***@***.com"
 }
-
+```
 5. Open your linux terminal, run "python3 1p3a.py". Test If you receive the email about your forum points.
 
-![Test Image 1](autologindemo.png)
+![Test Image 1](email.png)
 
 6. Add "python3 1p3a.py" to your crontab. Make it run once a day. 
