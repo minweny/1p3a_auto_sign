@@ -8,10 +8,10 @@
 * Linux (Use raspberry pi 4 for demo)
 
 ## What it can do for you: 
-Auto sign for you once a day to get forum point, and send the result to your email, 
-so you would know your total wealth :dog:
-
-This script also saves the screenshot of the forum news for you. You can find it under the same folder. 
+* Auto sign for you to get one forum point every day
+* Send the account summary to your email, give you an idea of how many points you have in total:dog:
+* Save the screenshot of the forum news for you. (totally useless but I still did it)
+* Keep the logging information in example.log under the same folder. 
 
 ## Steps:
 1. Install Python3 (3.7+) to your Linux
@@ -68,7 +68,7 @@ Add following setences
 ## Logging and screenshot
 You would find example.log and image.png under your current folder
 <br>![res](res.png)<br>
-Logging file
+Logging file / example.log
 <br>![logging](logging.png)<br>
-Screenshot
+Screenshot / image.png
 <br>![screenshot](screenshot.png)<br>
