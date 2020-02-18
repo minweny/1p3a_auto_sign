@@ -53,7 +53,7 @@ After step 5 and 6, you would have:
 ```
 python3 1p3a.py
 ```
-Test If you receive the email about your forum points.
+Test If you have received the email about your forum points.
 <br>![email](email.png)<br>
 8. Add "python3 1p3a.py" to your crontab. Make it run once a day or more.
 <br>Open bash terminal
