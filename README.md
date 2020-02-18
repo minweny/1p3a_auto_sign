@@ -21,8 +21,8 @@ pip3 install selenium
 pip3 install fake_useragent
 ```
 3. Install chrome and chromedriver
-* If you are using raspberry pi 4, the default chromium browser is fine. We just need to download [armhf version of chromedriver](https://launchpad.net/ubuntu/xenial/armhf/chromium-chromedriver/78.0.3904.108-0ubuntu0.16.04.1)
-* If you are using x86 Linux, first download [chrome browser](https://www.google.com/chrome/), second find the related [x86 chromedriver](https://chromedriver.chromium.org/downloads)
+* If you are using raspberry pi 4, the default chromium browser is fine. We just need to download [armhf version of chromedriver](https://launchpad.net/ubuntu/xenial/armhf/chromium-chromedriver/78.0.3904.108-0ubuntu0.16.04.1).
+* If you are using x86 Linux, first download [chrome browser](https://www.google.com/chrome/), second find the related [x86 version of chromedriver](https://chromedriver.chromium.org/downloads).
 4. Download the project
 ```
 git clone https://github.com/minweny/1p3a_auto_sign.git
@@ -30,7 +30,7 @@ git clone https://github.com/minweny/1p3a_auto_sign.git
 Your folder starts with one python file
 <br>![start](start.png)<br>
 5. In the same folder, create accounts.json
-Fill in your 1point3acres.com account and password
+<br>Fill in your 1point3acres.com account and password
 ```json
 {
 	"account": "",
@@ -38,7 +38,7 @@ Fill in your 1point3acres.com account and password
 }
 ```
 6. In the same folder, create emails.json
-Fill in your account and password for Gmail, and the email address that you want to receive the notification.
+<br>Fill in your account and password for Gmail, and the email address that you want to receive the notification.
 <br>Note: You may need to disable some security settings in Gmail
 ```json
 {
