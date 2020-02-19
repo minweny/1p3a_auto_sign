@@ -25,9 +25,8 @@ pip3 install fake_useragent
 * If you are using x86 Linux, first download [chrome browser](https://www.google.com/chrome/), second find the related [x86 version of chromedriver](https://chromedriver.chromium.org/downloads).
 4. Download the project
 ```
-mkdir 1p3a
-cd 1p3a
 git clone https://github.com/minweny/1p3a_auto_sign.git
+cd 1p3a_auto_sign/
 ```
 Your folder starts with one python file
 <br>![start](start.png)<br>
