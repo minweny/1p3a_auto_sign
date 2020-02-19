@@ -32,12 +32,14 @@ Your folder starts with one python file
 5. In the same folder, create accounts.json
 <br>Fill in your 1point3acres.com account and password
 ```json
-{
-	"account": "",
-	"password": ""
-}
+[
+	{
+		"account": "",
+		"password": ""
+	}
+]
 ```
-6. In the same folder, create emails.json
+6. In the same folder, create email.json
 <br>Fill in your account and password for Gmail, and the email address that you want to receive the notification.
 <br>Note: You may need to disable some security settings in Gmail
 ```json
