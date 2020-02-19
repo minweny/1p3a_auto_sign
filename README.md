@@ -52,7 +52,7 @@ Your folder starts with one python file
 }
 ```
 After step 5 and 6, you would have:
-<br>![account](account.png)<br>
+<br>![accounts](accounts.png)<br>
 7. Open your linux terminal, run the python script. 
 ```
 python3 1p3a.py
