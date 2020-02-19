@@ -67,7 +67,7 @@ crontab -e
 Add following setences
 ```
 # execute the python script every 6 hours
-* */6 * * * /usr/bin/python3 /home/pi/1p3a/1p3a.py
+* */6 * * * /usr/bin/python3 /home/pi/1p3a_auto_sign/1p3a.py
 ```
 ## Logging and screenshot
 You would find example.log and image.png under your current folder

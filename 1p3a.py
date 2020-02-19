@@ -65,17 +65,17 @@ def autoSign(forumAccountName, forumAccountPassword):
 		newPoint = point
 		
 		# clear all notifications
-		for col in range(1, 5):
-			notifactionCol = driver.find_elements(By.XPATH, "//*[@id='myprompt_menu']/li[{}]/a".format(str(col)))
-			if len(notifactionCol) > 0:
-				try:
-					printAndLogging('click ' + str(col))
-					notifactionCol[0].click()
-					time.sleep(5)
-					driver.get(login_url)
-					time.sleep(5)
-				except Exception as e:
-					printAndLogging(e)
+		# for col in range(1, 5):
+		# 	notifactionCol = driver.find_elements(By.XPATH, "//*[@id='myprompt_menu']/li[{}]/a".format(str(col)))
+		# 	if len(notifactionCol) > 0:
+		# 		try:
+		# 			printAndLogging('click ' + str(col))
+		# 			notifactionCol[0].click()
+		# 			time.sleep(5)
+		# 			driver.get(login_url)
+		# 			time.sleep(5)
+		# 		except Exception as e:
+		# 			printAndLogging(e)
 		
 		# if there is notifications box
 		notifications = driver.find_elements(By.XPATH, "//*[@id='myprompt_menu']")
