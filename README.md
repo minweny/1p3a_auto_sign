@@ -25,12 +25,15 @@ pip3 install fake_useragent
 * If you are using x86 Linux, first download [chrome browser](https://www.google.com/chrome/), second find the related [x86 version of chromedriver](https://chromedriver.chromium.org/downloads).
 4. Download the project
 ```
+mkdir 1p3a
+cd 1p3a
 git clone https://github.com/minweny/1p3a_auto_sign.git
 ```
 Your folder starts with one python file
 <br>![start](start.png)<br>
 5. In the same folder, create accounts.json
-<br>Fill in your 1point3acres.com account and password
+<br>Fill in your 1point3acres.com account and password.
+<br>You can have multiple accounts, separated by comma.
 ```json
 [
 	{
@@ -65,7 +68,7 @@ crontab -e
 Add following setences
 ```
 # execute the python script every 6 hours
-* */6 * * * /usr/bin/python3 /home/pi/1p3a.py
+* */6 * * * /usr/bin/python3 /home/pi/1p3a/1p3a.py
 ```
 ## Logging and screenshot
 You would find example.log and image.png under your current folder

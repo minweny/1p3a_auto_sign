@@ -58,13 +58,11 @@ def autoSign(forumAccountName, forumAccountPassword):
 		time.sleep(2)
 		driver.get(login_url)
 		time.sleep(3)
-		datetime_str = datetime.datetime.now().strftime("%m-%d-%Y-%H-%M-%S")
-		screenshotName = forumAccountName + '-' + datetime_str + '.png'
+		screenshotName = 'image.png'
 		driver.save_screenshot(screenshotName)
 		point = driver.find_element_by_id("extcreditmenu").text
 		printAndLogging('old point' + point)
 		newPoint = point
-		
 		
 		# clear all notifications
 		for col in range(1, 5):
