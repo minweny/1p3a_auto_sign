@@ -39,7 +39,7 @@ userAgent = ua.random
 printAndLogging(userAgent)
 options = Options()
 options.add_argument('--no-sandbox')
-# options.add_argument('--headless')
+options.add_argument('--headless')
 options.add_argument('--disable-dev-shm-usage')
 options.add_argument('user-agent=' + userAgent)
 
@@ -107,7 +107,6 @@ def autoSign(forumAccountName, forumAccountPassword):
 		message["From"] = forumAccountName
 		message["To"] = receiverEmailAccount
 		
-		driver.quit()
 		if len(signNodes) > 0:
 			with smtplib.SMTP_SSL("smtp.gmail.com", port) as server:
 				server.login(senderEmailAccount, senderEmailPassword)
@@ -118,6 +117,8 @@ def autoSign(forumAccountName, forumAccountPassword):
 		printAndLogging(inst.args)
 		printAndLogging(inst)
 		printAndLogging('Error happens!\n\n\n')
+	finally:
+		driver.quit()
 
 for i, forumAccount in enumerate(forumAccounts):
 	forumAccountName = forumAccount['account']
