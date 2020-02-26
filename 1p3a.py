@@ -39,7 +39,7 @@ userAgent = ua.random
 printAndLogging(userAgent)
 options = Options()
 options.add_argument('--no-sandbox')
-options.add_argument('--headless')
+# options.add_argument('--headless')
 options.add_argument('--disable-dev-shm-usage')
 options.add_argument('user-agent=' + userAgent)
 
@@ -63,6 +63,13 @@ def autoSign(forumAccountName, forumAccountPassword):
 		point = driver.find_element_by_id("extcreditmenu").text
 		printAndLogging('old point' + point)
 		newPoint = point
+		print('test starts here')
+		testPoint = point
+		testPoint = 'testpoint'
+		# driver.find_element_by_id("extcreditmenu").text = 'new node'
+		driver.execute_script("document.getElementById('extcreditmenu').innerText='积分: 1'")
+		time.sleep(3)
+		print(point, testPoint)
 		
 		# clear all notifications
 		# for col in range(1, 5):
