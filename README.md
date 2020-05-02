@@ -21,8 +21,11 @@ pip3 install selenium
 pip3 install fake_useragent
 ```
 3. Install chrome and chromedriver
-* If you are using raspberry pi 4, the default chromium browser is fine. We just need to download [armhf version of chromedriver](https://launchpad.net/ubuntu/xenial/armhf/chromium-chromedriver/78.0.3904.108-0ubuntu0.16.04.1).
-* If you are using x86 Linux, first download [chrome browser](https://www.google.com/chrome/), second find the related [x86 version of chromedriver](https://chromedriver.chromium.org/downloads).
+* If you are using raspberry pi 4, the default chromium browser is fine. We just need to download [armhf version of chromedriver](https://launchpad.net/ubuntu/xenial/armhf/chromium-chromedriver/78.0.3904.108-0ubuntu0.16.04.1).	
+Double click the deb file.	
+* If you are using x86 Linux, first download [chrome browser](https://www.google.com/chrome/), second find the related [x86 version of chromedriver](https://chromedriver.chromium.org/downloads).	
+sudo dpkg -i packagename to have chromedriver installed into /usr/bin	
+does produce error messages BUT chromedriver install succeeds!	
 4. Download the project
 ```
 git clone https://github.com/minweny/1p3a_auto_sign.git
