@@ -22,9 +22,13 @@ pip3 install fake_useragent
 ```
 3. Install chrome and chromedriver
 * If you are using raspberry pi 4, the default chromium browser is fine. We just need to download [armhf version of chromedriver](https://launchpad.net/ubuntu/xenial/armhf/chromium-chromedriver/78.0.3904.108-0ubuntu0.16.04.1).	
-Double click the deb file.	
+
+Double click the deb file.The chromedriver would be registered in environment variable.
+
 * If you are using x86 Linux, first download [chrome browser](https://www.google.com/chrome/), second find the related [x86 version of chromedriver](https://chromedriver.chromium.org/downloads).	
+
 sudo dpkg -i packagename to have chromedriver installed into /usr/bin	
+
 does produce error messages BUT chromedriver install succeeds!	
 4. Download the project
 ```
@@ -60,7 +64,7 @@ After step 5 and 6, you would have:
 ```
 python3 1p3a.py
 ```
-Test If you have received the email about your forum points.
+Test If you can receive the email about your forum points.
 <br>![email](email.png)<br>
 8. Add "python3 1p3a.py" to your crontab. Make it run once a day or more.
 <br>Open bash terminal
@@ -69,8 +73,15 @@ crontab -e
 ```
 Add following setences
 ```
-# execute the python script every day at 8:00 AM
-0 8 * * * cd /home/pi/1p3a_auto_sign/ && /usr/bin/python3 1p3a.py
+# execute the python script every day at spefic time
+0 8,12,16,20 * * * cd /home/pi/1p3a_auto_sign/ && /usr/bin/python3 1p3a.py
+```
+9. Modify 1p3a.py. Then you won't receive too many test emails.	
+```
+change the first line from
+testMode = True
+to
+testMode = False
 ```
 ## Logging and screenshot
 You would find example.log and image.png under your current folder
