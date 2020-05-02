@@ -1,3 +1,5 @@
+testMode = True
+
 import logging
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -64,14 +66,15 @@ def autoSign(forumAccountName, forumAccountPassword):
 		printAndLogging('old point' + point)
 		newPoint = point
 		print('test starts here')
-		testPoint = point
-		testPoint = 'testpoint'
+		# testPoint = point
+		# testPoint = 'testpoint'
 		# driver.find_element_by_id("extcreditmenu").text = 'new node'
-		driver.execute_script("document.getElementById('extcreditmenu').innerText='积分: 1'")
-		time.sleep(3)
-		print(point, testPoint)
+		# driver.execute_script("document.getElementById('extcreditmenu').innerText='积分: 1'")
+		# time.sleep(3)
+		# print(point, testPoint)
 		
-		# clear all notifications
+		# clear all notifications, try to click the menu item one by one
+		# it doesn't work
 		# for col in range(1, 5):
 		# 	notifactionCol = driver.find_elements(By.XPATH, "//*[@id='myprompt_menu']/li[{}]/a".format(str(col)))
 		# 	if len(notifactionCol) > 0:
@@ -84,7 +87,7 @@ def autoSign(forumAccountName, forumAccountPassword):
 		# 		except Exception as e:
 		# 			printAndLogging(e)
 		
-		# if there is notifications box
+		# if there is notifications box. this js script works like magic
 		notifications = driver.find_elements(By.XPATH, "//*[@id='myprompt_menu']")
 		if len(notifications) > 0:
 			printAndLogging('try to set the display to none...')
@@ -114,7 +117,7 @@ def autoSign(forumAccountName, forumAccountPassword):
 		message["From"] = forumAccountName
 		message["To"] = receiverEmailAccount
 		
-		if len(signNodes) > 0:
+		if testMode or len(signNodes) > 0:
 			with smtplib.SMTP_SSL("smtp.gmail.com", port) as server:
 				server.login(senderEmailAccount, senderEmailPassword)
 				server.sendmail(forumAccountName, receiverEmailAccount, message.as_string())
