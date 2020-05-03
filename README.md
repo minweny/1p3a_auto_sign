@@ -83,6 +83,10 @@ testMode = True
 to
 testMode = False
 ```
+10. give py file permission, or the crontab won't work		
+```
+chmod 777 1p3a.py
+```
 ## Logging and screenshot
 You would find example.log and image.png under your current folder
 <br>![res](res.png)<br>
