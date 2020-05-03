@@ -86,9 +86,17 @@ testMode = False
 10. give py file permission, or the crontab won't work(doesn't matter?)		
 ```
 chmod 777 1p3a.py
-```
+```	
+11. If you don't receive emails and find errors in example.log	
 Error: The process started from chrome location /usr/bin/chromium-browser is no longer running	
-change to headless mode
+change to headless mode	
+```
+uncomment 44th line
+change it from
+# options.add_argument('--headless')
+to
+options.add_argument('--headless')
+```
 
 ## Logging and screenshot
 You would find example.log and image.png under your current folder
