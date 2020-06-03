@@ -1,5 +1,13 @@
 # 1p3a_auto_sign / 一亩三分地自动签到脚本
-1point3acres.com forum auto sign script
+1point3acres.com forum auto sign script		
+
+## Issue / To do:	
+Cannot bypass this verification code, working on it right now.			
+
+You don't get any points, but nor do you lose any points since it will log in for you everyday.	
+
+This script is still helpful, maintaining your current points!
+![](1p3aLoginIssue.png)
 
 ## What you need: 
 * Python3
